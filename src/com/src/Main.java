@@ -1,12 +1,18 @@
 package com.src;
 
+import com.src.uicontrol.CheckBox;
+
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        System.out.println("Hello World!");
-        var taxCalculator = getCalculator();
-        taxCalculator.calculateTax();
+//        System.out.println("Hello World!");
+//        var taxCalculator = getCalculator();
+//        taxCalculator.calculateTax();
+
+        //demonstrate inheritance
+        var checkBox = new CheckBox();
+        checkBox.enable();
     }
 
     /**programming to interface
