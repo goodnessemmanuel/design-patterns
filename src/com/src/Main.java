@@ -1,12 +1,18 @@
 package com.src;
 
+import com.src.account.Account;
+
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        System.out.println("Hello World!");
-        var taxCalculator = getCalculator();
-        taxCalculator.calculateTax();
+//        var taxCalculator = getCalculator();
+//        taxCalculator.calculateTax();
+
+        var account = new Account();
+        account.deposit(100);
+        account.withdraw(60);
+        System.out.println(account.getBalance());
     }
 
     /**programming to interface
