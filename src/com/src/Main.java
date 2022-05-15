@@ -1,12 +1,18 @@
 package com.src;
 
+import com.src.mailservice.MailService;
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-        System.out.println("Hello World!");
-        var taxCalculator = getCalculator();
-        taxCalculator.calculateTax();
+//        var taxCalculator = getCalculator();
+//        taxCalculator.calculateTax();
+
+        //through abstraction methods like connection to
+        //to server in the MailService class has been hidden
+        //from this main class
+        var mailService = new MailService();
+        mailService.sendEmail();
     }
 
     /**programming to interface
