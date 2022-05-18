@@ -1,6 +1,9 @@
 package com.src;
 
+import com.src.uicontrol.Button;
 import com.src.uicontrol.CheckBox;
+import com.src.uicontrol.TextBox;
+import com.src.uicontrol.UIControl;
 
 public class Main {
 
@@ -13,6 +16,11 @@ public class Main {
         //demonstrate inheritance
         var checkBox = new CheckBox();
         checkBox.enable();
+
+        //demonstrate polymorphism
+        drawUIControl(new CheckBox()); //draws a checkbox
+        drawUIControl(new TextBox()); //draws a text box
+        drawUIControl(new Button()); //draws a button
     }
 
     /**programming to interface
@@ -24,5 +32,9 @@ public class Main {
      */
     public static TaxCalculator getCalculator(){
         return new TaxCalculator2019();
+    }
+
+    public static void drawUIControl(UIControl uiControl){
+        uiControl.draw();
     }
 }
