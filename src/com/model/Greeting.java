@@ -8,7 +8,7 @@ public class Greeting {
 
     public static void main(String[] args) {
         /**
-         * notice that this classes(both the local and anonymous)
+         * notice that these classes(both the local and anonymous)
          * uses HelloWorld interface
          */
         // local class
