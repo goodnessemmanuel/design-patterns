@@ -1,9 +1,9 @@
 package com.src.behavioural.command;
 
-import com.src.behavioural.command.demo.Light;
-import com.src.behavioural.command.demo.OnCommand;
-import com.src.behavioural.command.demo.Switch;
-import com.src.behavioural.command.demo.ToggleCommand;
+import com.src.behavioural.command.demo.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class CommandPatternDemo {
 
@@ -17,20 +17,31 @@ public class CommandPatternDemo {
      * design pattern example
      */
     public static void demoCustomExample() {
-        Light light = new Light(); //receiver
+        Light bedroomLight = new Light(); //receiver
+        Light kitchenLight = new Light(); //receiver
         Switch lightSwitch = new Switch(); // the invoker
 
-        OnCommand onCommand = new OnCommand(light);
+//        Command onCommand = new OnCommand(kitchenLight);
+//        lightSwitch.storeAndExecute(onCommand);
         //The storeAndExecute method of the switch invoker
         // that invokes the actual command execute through
         // the storeAndExecute(command) method
         //lightSwitch.storeAndExecute(onCommand); // the invoker
 
-        ToggleCommand toggleCommand = new ToggleCommand(light);
+        Command toggleCommand = new ToggleCommand(bedroomLight);
         lightSwitch.storeAndExecute(toggleCommand);
         lightSwitch.storeAndExecute(toggleCommand);
         lightSwitch.storeAndExecute(toggleCommand);
+//        lightSwitch.storeAndExecute(toggleCommand);
+//        lightSwitch.storeAndExecute(toggleCommand);
 
+
+        //macro command
+        List<Light> lights = new ArrayList<>();
+        lights.add(bedroomLight);
+        lights.add(kitchenLight);
+        Command allLightCommand = new AllLightsCommand(lights);
+        lightSwitch.storeAndExecute(allLightCommand);
     }
 
     /**
