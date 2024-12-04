@@ -3,7 +3,8 @@
 
 ### Overview
 The adapter pattern is a great structural pattern that is used to connect new code to legacy code
-with having the change the pattern of the original legacy code.  You have multiple adapters
+without having to change the implementation of the original legacy code. You can have multiple 
+adapters in a the same application depending on your need
 
 ### Concepts
 - Converter to another interface

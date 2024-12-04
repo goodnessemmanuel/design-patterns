@@ -14,5 +14,7 @@ Why design patterns are important:
 The structural design include:
 - Adapter pattern
 - Bridge pattern
+- Composite pattern
+- Decorator pattern
 - Facade pattern
 
