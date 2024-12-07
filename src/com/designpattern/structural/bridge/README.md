@@ -1,5 +1,5 @@
 # Bridge pattern.
-![Interface Design Pattern Screenshot](../../../../../images/adapter-pattern.png)
+![Interface Design Pattern Screenshot](../../../../../images/bridge-pattern.png)
 
 ### Overview
 The bridge pattern is a structural pattern that is used to decouple abstraction from implementation

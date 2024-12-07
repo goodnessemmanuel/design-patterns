@@ -17,4 +17,6 @@ The structural design include:
 - Composite pattern
 - Decorator pattern
 - Facade pattern
+- Flyweight pattern
+- Proxy pattern
 
