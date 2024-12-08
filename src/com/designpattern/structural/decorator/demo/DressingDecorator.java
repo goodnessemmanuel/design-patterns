@@ -1,7 +1,7 @@
 package com.designpattern.structural.decorator.demo;
 
 public class DressingDecorator extends SandwichDecorator{
-    public DressingDecorator(Sandwhich customSandwich) {
+    public DressingDecorator(Sandwich customSandwich) {
         super(customSandwich);
     }
 

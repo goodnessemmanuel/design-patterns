@@ -2,7 +2,7 @@ package com.designpattern.structural.decorator;
 
 import com.designpattern.structural.decorator.demo.DressingDecorator;
 import com.designpattern.structural.decorator.demo.MeatDecorator;
-import com.designpattern.structural.decorator.demo.Sandwhich;
+import com.designpattern.structural.decorator.demo.Sandwich;
 import com.designpattern.structural.decorator.demo.SimpleSandwich;
 
 import java.io.*;
@@ -12,9 +12,9 @@ public class DecoratorPatternDemo {
     public static void main(String[] args) {
 //        everydayExample();
 
-        Sandwhich sandwhich = new DressingDecorator(new MeatDecorator(new SimpleSandwich()));
+        Sandwich sandwich = new DressingDecorator(new MeatDecorator(new SimpleSandwich()));
 
-        System.out.println(sandwhich.make());
+        System.out.println(sandwich.make());
     }
 
     private static void everydayExample() {

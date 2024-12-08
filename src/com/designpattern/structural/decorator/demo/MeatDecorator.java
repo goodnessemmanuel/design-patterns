@@ -1,7 +1,7 @@
 package com.designpattern.structural.decorator.demo;
 
 public class MeatDecorator extends SandwichDecorator{
-    public MeatDecorator(Sandwhich customSandwich) {
+    public MeatDecorator(Sandwich customSandwich) {
         super(customSandwich);
     }
 
