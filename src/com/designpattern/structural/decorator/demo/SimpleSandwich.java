@@ -1,6 +1,6 @@
 package com.designpattern.structural.decorator.demo;
 
-public class SimpleSandwich extends Sandwhich{
+public class SimpleSandwich implements Sandwhich{
     @Override
     public String make() {
         return "Bread";
